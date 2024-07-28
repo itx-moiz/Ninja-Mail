@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* navbar */
+.linknav::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    height: 3px;
+    width: 0%;
+    background-color: #4BA87D;
+    transition: all 0.25s ease-in-out;
+}
+.linknav:hover::after{
+    width: 100%;
+    left: 0;
+}
+/* hero section */
+.heroimg{
+    position: relative;
+    right: 120px;
+}
+.bg{
+    background-image: url(images/BG\ stuff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2% 8%;
+    padding-top: 0.2%
+}
+@media (max-width:799px){
+    .bg{
+        top: 9.5in;
+    }
+}
+/* Get started */
+.getstartcl{
+    background: #4BA87D;
+}
+.btngt{
+    background-color: white;
+    color: #307555;
+    border: 2px solid white;
+}
+.btnnav{
+    background-color: #4BA87D;
+    border: 2px solid #4BA87D;
+    color: white;
+}
+.btnnav:hover{
+    background: white;
+    color: #4BA87D;
+}
+.btngt, .btnnav{
+    transition: all ease-out 0.2s;
+}
+.btngt:hover{
+    background-color: #4BA87D;
+    color: white;
+    border: 2px solid white;
+}
+.btnhero, .btnhero:hover{
+    border: 2px solid #4BA87D;
+}
+.style{
+    font-family: "Playfair Display", serif;
+}
+.fs{
+    font-size: 0.875rem;
+}
+@media (max-width:796px){
+.fs{
+    font-size: 0.625rem;
+}
+}
+.width{
+    width: 20%;
+}
+/* join us */
+.form{
+    border: 2px solid rgb(192, 192, 192);
+    width: 25vw;
+}
+.form:focus{
+    border-color: #4BA87D;
+    box-shadow: 2px 2px 12px 5px #4BA87D;
+}
+.overlay{
+    background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+    z-index: 1;
+    width: 106%;
+    height: 100%;
+    bottom: 0;
+}
+
+.overlay, .pointer:hover{
+    cursor: pointer;
+}
+.memberdetail{
+    bottom: 0;
+    left: 2rem;
+    z-index: 2;
+}
+.bgvid{
+    background: #F7F7F7;
+    height: 30rem;
+    width: 100vw;
+    z-index: -10;
+    position: absolute;
+    top: 94%;
+}
+.d{
+    font-size: 2.8rem;
+}
+@media screen and (max-width: 1048px){
+    .dd{
+        font-size:0.9rem;
+    }
+    .brandpic{
+        width: 100%;
+    }
+    .mempic{
+        width: 170%;
+    }    
+    .headtxt{
+        font-size: 240% !important;
+    }
+    .txt{
+        font-size: 1rem;
+    }
+}
+@media (max-width:450px) {
+    .style1{
+        margin-bottom: 5.5rem;
+        font-size: 0.65rem;
+    }
+    .heroimg{
+        position: absolute;
+        bottom: 7.9rem;
+    }
+    .style2{
+        font-size: 55%;
+        margin-right: 1.3rem;
+    }
+    .style3{
+        font-size: 0.7rem;
+        margin-right: 0.7rem;
+    }
+    .navlogo{
+        width: 40%;
+    }
+    .bg{
+        background-position: 0% 8%;
+    }
+    .mempic{
+        width: 113%;
+    }
+    .overlay{
+        display: none;
+    }
+    .cd{
+        width: 100%;
+    }
+    .headtxt{
+        font-size: 180%;
+    }
+    .marg{
+        padding-bottom: 200rem;
+        height: 100rem;
+    }
+    .pad{
+        padding-top: 30rem;
+    }
+    .headtxt1{
+        font-size:200% !important;
+    }
+    .headtxt, .txtbody{
+        margin-left: -6rem;
+        width: 300%;
+    }
+    .mail, .inputmail{
+        width: 85% !important;
+    }
+    .thankyou{
+        bottom: 1.5rem;
+        text-align: center;
+    }
+    .imghero{
+        width: 150% !important;
+    }
+    .width{
+        width: 21.39rem;
+    }
+    .btnend{
+        font-size: 0.8rem;
+    }
+}
